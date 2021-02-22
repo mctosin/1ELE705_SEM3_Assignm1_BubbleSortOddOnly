@@ -3,12 +3,12 @@
 
 int main(int argc, char** argv) {
 
-	float a[1000];
+	int a[1000];
 	int i, Q_elem_a;
 
 	for (i = 1; i < argc; i++) {
-		a[i - 1] = atof(argv[i]);
-		fprintf(stderr, "%.2f ", a[i - 1]);
+		a[i - 1] = atoi(argv[i]);
+		fprintf(stderr, "%d ", a[i - 1]);
 	}
 	fprintf(stderr, "\n");
 	Q_elem_a = argc - 1;
@@ -18,11 +18,11 @@ int main(int argc, char** argv) {
 	// Codifique o algoritmo Bubble Sort para  
 	// ordenar em ordem crescente apenas os
 	// elementos ímpares do vetor de
-	// float a[], o qual possui Q_elem_a elementos.
-	// Durante a ordenação os elementos pares
+	// int a[], o qual possui Q_elem_a elementos.
+	// Durante a ordenação cada um dos elementos pares
 	// devem permanecer na sua posição original
 	// no vetor a[]. Apenas os elementos ímpares
-	// são movidos durante o processo de ordenação.
+	// serão movidos durante o processo de ordenação.
 	// Crie seu código abaixo:
 
 
@@ -34,7 +34,6 @@ int main(int argc, char** argv) {
 	// Exemplo: "<elem1>< ><elem2>< > ... < ><elemN><\n>"
 	// <  > e ... servem para representar os componentes da string
 	// e não devem ser impressos.
-	// Os valores devem ser arredondados com 2 casas decimais.
 	// Crie a saída para o programa de testes automático aqui:
 
 	
